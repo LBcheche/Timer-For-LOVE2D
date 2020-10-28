@@ -32,7 +32,7 @@ where:
 
 - `alarmFunction`: Client's callback function that will be called after the set time.
 
-- `lopp`: Boolean that flags if the timer will automatically reset.
+- `lopp`: Boolean that flags if the timer will be automatically restarted.
 
 ### Timer Handler Methods
 
