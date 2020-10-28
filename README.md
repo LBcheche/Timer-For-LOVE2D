@@ -1,6 +1,6 @@
 # Timer For LOVË2D
 
-The Timer is a LOVË2D class responsible for calling a function after a certain time.
+Timer is a LOVË2D class responsible for calling a function after a certain time.
 
 The waiting time and the callback function are setup by the client passing
 a param table at constructor or calling its respective set methods.
