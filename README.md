@@ -34,6 +34,6 @@ a param table at constructor or calling its respective set methods.
 
 - `getTime()` Public function responsible for return current time value.
 
-- `isRunning()` Public function responsible for return a boolean value indicating if timer is running.
+- `isRunning()` Public function responsible for return a boolean value indicates if timer is running.
 
-- `hasExpired()` Public function responsible for return a boolean value indicating if timer has expired.
+- `hasExpired()` Public function responsible for return a boolean value indicates if timer has expired.
