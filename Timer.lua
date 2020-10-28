@@ -50,7 +50,7 @@ function Timer:init(params)
     self.timeSetup = params.time -- timeSetup: global variable that holds the original time setup in seconds.
     self.time = params.time -- time: global variable that represents the current time in seconds.
     self.alarmFunction = params.alarmFunction -- alarmFunction: clients callback function that will be called after the set time.
-    self.continuous = params.continuous or false -- continuous: global boolean variable that flags if the timer will automatically reset
+    self.loop = params.loop or false -- loop: global boolean variable that flags if the timer will automatically reset
 
     self.running = false --running: global boolean variable that flags if the timer has started.
     self.expired = false -- expired: global boolean variable that flags if the timer has expired.
@@ -86,7 +86,7 @@ function Timer:checkExpiredAndAlarm()
         self.alarmFunction()
         self.expired = true
 
-        if self.continuous then
+        if self.loop then
 
             self:reset()
             self:start()
@@ -152,6 +152,14 @@ function Timer:setTime(time)
 
     self.time = time
     self.timeSetup = time
+
+end
+
+-- Public Function responsible for set Timer's in seconds.
+function Timer:setLoop(bLoop)
+
+    self.loop = bLoop
+
 
 end
 

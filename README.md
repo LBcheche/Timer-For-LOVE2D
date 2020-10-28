@@ -22,17 +22,17 @@ a param table at constructor or calling its respective set methods.
 {
     time = ... ,
     alarmFunction = function() return ... end,
-    continuous = ... ,
+    loop = ... ,
 }
 ```
 
 where:
 
-- `time`: a number that represents the current time in seconds.
+- `time`: Number that represents the current time in seconds.
 
-- `alarmFunction`: a client's callback function that will be called after the set time.
+- `alarmFunction`: Client's callback function that will be called after the set time.
 
-- `continuous`: a boolean that flags if the timer will automatically reset
+- `lopp`: Boolean that flags if the timer will automatically reset.
 
 ### Timer Handler Methods
 
