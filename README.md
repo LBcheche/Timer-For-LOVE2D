@@ -27,13 +27,13 @@ a param table at constructor or calling its respective set methods.
 
 - `setAlarmFunction(afunc)` Public function responsible for set the callback function. `afunc` is a client's callback function.
 
-- `setTime(time)` Public function responsible for set Timer's in seconds. `time` is a Timer's time in seconds.
+- `setTime(time)` Public function responsible for set Timer's delay. `time` is a Timer's delay value in seconds.
 
 
 ### Get/Has Methods
 
 - `getTime()` Public function responsible for return current time value.
 
-- `isRunning()` Public function responsible for return a boolean value indicating if the timer is running.
+- `isRunning()` Public function responsible for return a boolean value indicating if timer is running.
 
-- `hasExpired()` Public function responsible for return a boolean value indicating if the timer has expired.
+- `hasExpired()` Public function responsible for return a boolean value indicating if timer has expired.
