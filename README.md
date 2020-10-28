@@ -46,17 +46,17 @@ where:
 
 ### Set Methods
 
-- `setAlarmFunction(afunc)`: Public function responsible for set the callback function. Parameter `afunc` is a client's callback function.
+- `setAlarmFunction(afunc)`: Public function responsible for set the callback function. The `afunc` parameter is a client's callback function.
 
-- `setTime(time)`: Public function responsible for set Timer's delay. Parameter `time` is a Timer's delay value in seconds.
+- `setTime(time)`: Public function responsible for set Timer's delay. The `time` parameter is a number that represents Timer's delay value in seconds.
 
 
 ### Get/Has Methods
 
 - `getTime()`: Public function responsible for return current time value.
 
-- `isRunning()`: Public function responsible for return a boolean value indicates if timer is running.
+- `isRunning()`: Public function responsible for return a boolean value that indicates if timer is running.
 
-- `hasExpired()`: Public function responsible for return a boolean value indicates if timer has expired.
+- `hasExpired()`: Public function responsible for return a boolean value that indicates if timer has expired.
 
-- `setLoop(bLoop)`: Public Function responsible for set if Timer will be automatically restarted after an time cicle. Parameter `bLoop` is a boolean. 
+- `setLoop(bLoop)`: Public function responsible for defining whether the Timer will automatically restart after a time cycle. The bLoop parameter is boolean. Parameter `bLoop` is a boolean. 
