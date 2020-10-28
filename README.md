@@ -14,6 +14,24 @@ a param table at constructor or calling its respective set methods.
 
 ## PUBLIC METHODS
 
+### Constructor
+
+- `init(params)`: Constructor function responsable for a Timer instantiation. Passed parameter `params` is a table with the following format:
+
+```
+{
+    time = ... ,
+    alarmFunction = function() return ... end,
+    continuous = ... ,
+}
+```
+
+where:
+
+- `time`: global variable that represents the current time in seconds.
+- `alarmFunction`: clients callback function that will be called after the set time.
+- `continuous`: global boolean variable that flags if the timer will automatically reset
+
 ### Timer Handler Methods
 
 - `reset()`: Public function responsible for reset the Timer.
@@ -25,9 +43,9 @@ a param table at constructor or calling its respective set methods.
 
 ### Set Methods
 
-- `setAlarmFunction(afunc)`: Public function responsible for set the callback function. `afunc` is a client's callback function.
+- `setAlarmFunction(afunc)`: Public function responsible for set the callback function. Passed parameter `afunc` is a client's callback function.
 
-- `setTime(time)`: Public function responsible for set Timer's delay. `time` is a Timer's delay value in seconds.
+- `setTime(time)`: Public function responsible for set Timer's delay. Passed parameter `time` is a Timer's delay value in seconds.
 
 
 ### Get/Has Methods
