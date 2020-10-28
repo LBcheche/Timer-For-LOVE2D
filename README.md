@@ -2,7 +2,7 @@
 
 Timer is a LOVË2D class responsible for calling a function after a certain time.
 
-The waiting time and the callback function are setup by the client passing
+An waiting time and a callback function are setup by the client passing
 a param table at constructor or calling its respective set methods.
 
 
