@@ -58,3 +58,5 @@ where:
 - `isRunning()`: Public function responsible for return a boolean value indicates if timer is running.
 
 - `hasExpired()`: Public function responsible for return a boolean value indicates if timer has expired.
+
+- `setLoop(bLoop)`: Public Function responsible for set if Timer will be automatically restarted after an time cicle. Parameter `bLoop` is a boolean. 

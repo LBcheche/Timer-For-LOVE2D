@@ -155,11 +155,11 @@ function Timer:setTime(time)
 
 end
 
--- Public Function responsible for set Timer's in seconds.
+-- Public Function responsible for set if Timer will be
+-- automatically restarted after an time cicle.
 function Timer:setLoop(bLoop)
 
     self.loop = bLoop
-
 
 end
 
