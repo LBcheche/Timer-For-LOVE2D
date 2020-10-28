@@ -28,11 +28,11 @@ a param table at constructor or calling its respective set methods.
 
 where:
 
-- `time`: global variable that represents the current time in seconds.
+- `time`: a number that represents the current time in seconds.
 
-- `alarmFunction`: clients callback function that will be called after the set time.
+- `alarmFunction`: a client's callback function that will be called after the set time.
 
-- `continuous`: global boolean variable that flags if the timer will automatically reset
+- `continuous`: a boolean that flags if the timer will automatically reset
 
 ### Timer Handler Methods
 
