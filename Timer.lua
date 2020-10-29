@@ -161,6 +161,7 @@ function Timer:setLoop(bLoop)
 
     self.loop = bLoop
 
+
 end
 
 

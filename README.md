@@ -34,29 +34,41 @@ where:
 
 - `lopp`: Boolean that flags if the timer will be automatically restarted.
 
+### Update Method
+
+- `update(dt)`: Default LOVË2D callback function responsable for update the timer. 
+Must be called at client's update function or directly from `love.update` function at *main.lua* . 
+`dt` is the most common shorthand for delta-time, which is usually passed through 
+`love.update` to represent the amount of time which has passed since it was last called.
 
 ### Timer Handler Methods
 
-- `reset()`: Public function responsible for reset the Timer.
-
 - `start()`: Public function responsible for start the Timer.
+
+- `reset()`: Public function responsible for reset the Timer.
 
 - `pause()`: Public function responsible for pauses the Timer.
 
 
+
 ### Set Methods
 
-- `setAlarmFunction(afunc)`: Public function responsible for set the callback function. The `afunc` parameter is a client's callback function.
+- `setAlarmFunction(afunc)`: Public function responsible for set the callback function.
+The `afunc` parameter is a client's callback function.
 
-- `setTime(time)`: Public function responsible for set Timer's delay. The `time` parameter is a number that represents Timer's delay value in seconds.
+- `setTime(time)`: Public function responsible for set Timer's delay. 
+The `time` parameter is a number that represents Timer's delay value in seconds.
 
+- `setLoop(bLoop)`: Public function responsible for defining whether the Timer will 
+automatically restart after a time cycle. The `bLoop` parameter is a boolean. 
 
 ### Get/Has Methods
 
-- `getTime()`: Public function responsible for return current time value.
+- `getTime()`: Public function responsible for return a current time value.
 
-- `isRunning()`: Public function responsible for return a boolean value that indicates if timer is running.
+- `isRunning()`: Public function responsible for return a boolean value that 
+indicates if timer is running.
 
-- `hasExpired()`: Public function responsible for return a boolean value that indicates if timer has expired.
+- `hasExpired()`: Public function responsible for return a boolean value that 
+indicates if timer has expired.
 
-- `setLoop(bLoop)`: Public function responsible for defining whether the Timer will automatically restart after a time cycle. The bLoop parameter is boolean. Parameter `bLoop` is a boolean. 
