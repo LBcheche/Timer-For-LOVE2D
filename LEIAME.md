@@ -1,4 +1,4 @@
-# Temporizador para LOVË2D
+# Timer para LOVË2D
 
 Timer é uma classe LOVË2D responsável por chamar uma função após um certo tempo.
 
@@ -43,11 +43,11 @@ O `dt` é a abreviação mais comum de delta time (variação de tempo), que ger
 
 ### Métodos de Manuseio do Temporizador
 
-- `start()`: Função pública responsável por iniciar o temporizador.
+- `start()`: Função pública responsável por iniciar o timer.
 
-- `reset()`: Função pública responsável por reiniciar o temporizador.
+- `reset()`: Função pública responsável por reiniciar o timer.
 
-- `pause()`: Função pública responsável por pausar a contagem regressiva.
+- `pause()`: Função pública responsável por pausar o timer.
 
 
 
@@ -59,8 +59,8 @@ O parâmetro `afunc` é uma função callback definida pela classe cliente.
 - `setTime(time)`: Função pública responsável por definir o tempo para a contagem regressiva. 
 O parâmetro `time` é um valor numerico que será atribuido ao tempo do Timer, dimensionado em segundos.
 
-- `setLoop(bLoop)`: Função pública responsável por definir se o Temporizador irá 
-reiniciar automaticamente após um ciclo de tempo. O parâmetro `bLoop` é um valor booleano. 
+- `setLoop(bLoop)`: Função pública responsável por definir se o timer irá 
+reiniciar automaticamente após um ciclo de temporização regressiva. O parâmetro `bLoop` é um valor booleano. 
 
 ### Métodos Get/Has
 
